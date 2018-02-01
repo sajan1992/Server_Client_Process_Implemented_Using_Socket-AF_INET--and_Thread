@@ -1,0 +1,9 @@
+#! /bin/bash
+
+for i in {1..100000}
+do
+	echo "LOOPING:$i"
+./client1&
+./client2&
+./client3
+done
